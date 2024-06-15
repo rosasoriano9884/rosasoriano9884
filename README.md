@@ -3,7 +3,7 @@
 - 🌱 I’m currently learning more about data science
 - 💞️ I’m looking to collaborate on any cool project I can learn
 - 😄 Pronouns: She/Her/Hers
-- ⚡ Fun fact: I play Chess in my free time
+- ⚡ Fun fact: I plan on a career change from briefly teaching mathematics.
 
 <!---
 rosasoriano9884/rosasoriano9884 is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
