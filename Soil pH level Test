@@ -1,0 +1,21 @@
+#include <stdio.h>
+int main()
+{
+int x;
+printf("Enter pH value:");//Enter measured soil pH level
+scanf("%d/n", &x);
+if (x>=8)
+{
+printf("Alkaline Soil\n.",x); //pH 8-14
+}
+else if (x==7)
+{
+printf("Neutral Soil\n.",x);//pH 7
+}
+else if (x>=0)
+{
+printf("Acidic Soil\n.",x); //pH 0-6
+}
+
+return 0;
+}
