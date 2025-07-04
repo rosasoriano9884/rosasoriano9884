@@ -1,0 +1,329 @@
+## Analysis of Variance Table
+## 
+## Response: area
+##            Df  Sum Sq Mean Sq F value Pr(>F)
+## FFMC        1    3366    3366    0.83   0.36
+## Residuals 515 2087499    4053
+summary(lm_1)
+## 
+## Call:
+## lm(formula = area ~ FFMC, data = Fires)
+## 
+## Residuals:
+##    Min     1Q Median     3Q    Max 
+##  -15.4  -13.3  -11.8   -5.8 1077.1 
+## 
+## Coefficients:
+##             Estimate Std. Error t value Pr(>|t|)
+## (Intercept)  -29.091     46.109   -0.63     0.53
+## FFMC           0.463      0.508    0.91     0.36
+## 
+## Residual standard error: 63.7 on 515 degrees of freedom
+## Multiple R-squared:  0.00161,    Adjusted R-squared:  -0.000329 
+## F-statistic: 0.83 on 1 and 515 DF,  p-value: 0.363
+
+## Analysis of Variance Table
+## 
+## Response: area
+##            Df  Sum Sq Mean Sq F value Pr(>F)  
+## DMC         1   11140   11140    2.76  0.097 .
+## Residuals 515 2079724    4038                 
+## ---
+## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+summary(lm_2)
+## 
+## Call:
+## lm(formula = area ~ DMC, data = Fires)
+## 
+## Residuals:
+##    Min     1Q Median     3Q    Max 
+##  -25.8  -13.5  -10.1   -5.1 1077.3 
+## 
+## Coefficients:
+##             Estimate Std. Error t value Pr(>|t|)  
+## (Intercept)   4.8036     5.5915    0.86    0.391  
+## DMC           0.0725     0.0437    1.66    0.097 .
+## ---
+## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+## 
+## Residual standard error: 63.5 on 515 degrees of freedom
+## Multiple R-squared:  0.00533,    Adjusted R-squared:  0.0034 
+## F-statistic: 2.76 on 1 and 515 DF,  p-value: 0.0973
+
+
+## Analysis of Variance Table
+## 
+## Response: area
+##            Df  Sum Sq Mean Sq F value Pr(>F)
+## DC          1    5099    5099    1.26   0.26
+## Residuals 515 2085766    4050
+summary(lm_3)
+## 
+## Call:
+## lm(formula = area ~ DC, data = Fires)
+## 
+## Residuals:
+##    Min     1Q Median     3Q    Max 
+##  -16.7  -14.3  -10.9   -5.4 1076.4 
+## 
+## Coefficients:
+##             Estimate Std. Error t value Pr(>|t|)
+## (Intercept)   5.9037     6.7918    0.87     0.39
+## DC            0.0127     0.0113    1.12     0.26
+## 
+## Residual standard error: 63.6 on 515 degrees of freedom
+## Multiple R-squared:  0.00244,    Adjusted R-squared:  0.000502 
+## F-statistic: 1.26 on 1 and 515 DF,  p-value: 0.262
+
+## Analysis of Variance Table
+## 
+## Response: area
+##            Df  Sum Sq Mean Sq F value Pr(>F)
+## ISI         1     143     143    0.04   0.85
+## Residuals 515 2090722    4060
+summary(lm_4)
+## 
+## Call:
+## lm(formula = area ~ ISI, data = Fires)
+## 
+## Residuals:
+##    Min     1Q Median     3Q    Max 
+##  -18.3  -12.8  -12.1   -6.2 1078.0 
+## 
+## Coefficients:
+##             Estimate Std. Error t value Pr(>|t|)  
+## (Intercept)   11.807      6.217    1.90    0.058 .
+## ISI            0.115      0.615    0.19    0.851  
+## ---
+## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+## 
+## Residual standard error: 63.7 on 515 degrees of freedom
+## Multiple R-squared:  6.82e-05,   Adjusted R-squared:  -0.00187 
+## F-statistic: 0.0351 on 1 and 515 DF,  p-value: 0.851
+
+## Analysis of Variance Table
+## 
+## Response: area
+##            Df  Sum Sq Mean Sq F value Pr(>F)  
+## temp        1   20017   20017    4.98  0.026 *
+## Residuals 515 2070848    4021                 
+## ---
+## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+summary(lm_5)
+## 
+## Call:
+## lm(formula = area ~ temp, data = Fires)
+## 
+## Residuals:
+##    Min     1Q Median     3Q    Max 
+##  -27.3  -14.7  -10.4   -3.4 1071.3 
+## 
+## Coefficients:
+##             Estimate Std. Error t value Pr(>|t|)  
+## (Intercept)   -7.414      9.500   -0.78    0.435  
+## temp           1.073      0.481    2.23    0.026 *
+## ---
+## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+## 
+## Residual standard error: 63.4 on 515 degrees of freedom
+## Multiple R-squared:  0.00957,    Adjusted R-squared:  0.00765 
+## F-statistic: 4.98 on 1 and 515 DF,  p-value: 0.0261
+
+## Analysis of Variance Table
+## 
+## Response: area
+##            Df  Sum Sq Mean Sq F value Pr(>F)  
+## RH          1   11924   11924    2.95  0.086 .
+## Residuals 515 2078940    4037                 
+## ---
+## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+summary(lm_6)
+## 
+## Call:
+## lm(formula = area ~ RH, data = Fires)
+## 
+## Residuals:
+##    Min     1Q Median     3Q    Max 
+##  -21.5  -14.4  -10.6   -3.5 1072.9 
+## 
+## Coefficients:
+##             Estimate Std. Error t value Pr(>|t|)   
+## (Intercept)   25.895      8.089    3.20   0.0015 **
+## RH            -0.295      0.171   -1.72   0.0863 . 
+## ---
+## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+## 
+## Residual standard error: 63.5 on 515 degrees of freedom
+## Multiple R-squared:  0.0057, Adjusted R-squared:  0.00377 
+## F-statistic: 2.95 on 1 and 515 DF,  p-value: 0.0863
+
+## Analysis of Variance Table
+## 
+## Response: area
+##            Df  Sum Sq Mean Sq F value Pr(>F)
+## wind        1     317     317    0.08   0.78
+## Residuals 515 2090547    4059
+summary(lm_7)
+## 
+## Call:
+## lm(formula = area ~ wind, data = Fires)
+## 
+## Residuals:
+##    Min     1Q Median     3Q    Max 
+##  -14.8  -12.8  -11.9   -6.1 1078.0 
+## 
+## Coefficients:
+##             Estimate Std. Error t value Pr(>|t|)
+## (Intercept)   11.089      6.885    1.61     0.11
+## wind           0.438      1.565    0.28     0.78
+## 
+## Residual standard error: 63.7 on 515 degrees of freedom
+## Multiple R-squared:  0.000152,   Adjusted R-squared:  -0.00179 
+## F-statistic: 0.0781 on 1 and 515 DF,  p-value: 0.78
+
+
+## Analysis of Variance Table
+## 
+## Response: area
+##            Df  Sum Sq Mean Sq F value Pr(>F)
+## rain        1     113     113    0.03   0.87
+## Residuals 515 2090751    4060
+summary(lm_8)
+## 
+## Call:
+## lm(formula = area ~ rain, data = Fires)
+## 
+## Residuals:
+##    Min     1Q Median     3Q    Max 
+##  -12.9  -12.9  -12.2   -6.3 1078.0 
+## 
+## Coefficients:
+##             Estimate Std. Error t value Pr(>|t|)    
+## (Intercept)    12.88       2.81    4.58  5.7e-06 ***
+## rain           -1.58       9.48   -0.17     0.87    
+## ---
+## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+## 
+## Residual standard error: 63.7 on 515 degrees of freedom
+## Multiple R-squared:  5.43e-05,   Adjusted R-squared:  -0.00189 
+## F-statistic: 0.0279 on 1 and 515 DF,  p-value: 0.867
+
+## 
+## Call:
+## lm(formula = area ~ FFMC + DMC + DC + ISI + temp + RH + wind + 
+##     rain, data = Fires)
+## 
+## Residuals:
+##    Min     1Q Median     3Q    Max 
+##  -31.1  -15.5   -9.4   -0.8 1069.0 
+## 
+## Coefficients:
+##             Estimate Std. Error t value Pr(>|t|)
+## (Intercept)  2.49381   62.04813    0.04     0.97
+## FFMC        -0.02331    0.66080   -0.04     0.97
+## DMC          0.07649    0.06678    1.15     0.25
+## DC          -0.00569    0.01628   -0.35     0.73
+## ISI         -0.69844    0.77192   -0.90     0.37
+## temp         0.84795    0.78718    1.08     0.28
+## RH          -0.19629    0.23666   -0.83     0.41
+## wind         1.52710    1.67000    0.91     0.36
+## rain        -2.54001    9.67578   -0.26     0.79
+## 
+## Residual standard error: 63.6 on 508 degrees of freedom
+## Multiple R-squared:  0.016,  Adjusted R-squared:  0.000517 
+## F-statistic: 1.03 on 8 and 508 DF,  p-value: 0.41
+
+## 
+## Call:
+## lm(formula = area ~ DMC + ISI + temp + RH + rain, data = Fires)
+## 
+## Residuals:
+##    Min     1Q Median     3Q    Max 
+##  -28.4  -14.8   -9.8   -1.1 1069.6 
+## 
+## Coefficients:
+##             Estimate Std. Error t value Pr(>|t|)
+## (Intercept)   9.2882    18.7807    0.49     0.62
+## DMC           0.0640     0.0551    1.16     0.25
+## ISI          -0.5538     0.6756   -0.82     0.41
+## temp          0.5933     0.7381    0.80     0.42
+## RH           -0.2193     0.2261   -0.97     0.33
+## rain         -1.6456     9.6036   -0.17     0.86
+## 
+## Residual standard error: 63.5 on 511 degrees of freedom
+## Multiple R-squared:  0.014,  Adjusted R-squared:  0.00432 
+## F-statistic: 1.45 on 5 and 511 DF,  p-value: 0.205
+
+## Analysis of Variance Table
+## 
+## Response: area
+##            Df  Sum Sq Mean Sq F value Pr(>F)  
+## RH          1   11924   11924    2.96  0.086 .
+## rain        1       0       0    0.00  0.997  
+## temp        1    9950    9950    2.47  0.117  
+## Residuals 513 2068990    4033                 
+## ---
+## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+summary(lm_best)
+## 
+## Call:
+## lm(formula = area ~ RH + rain + temp, data = Fires)
+## 
+## Residuals:
+##    Min     1Q Median     3Q    Max 
+##  -27.9  -14.5  -10.4   -2.4 1070.3 
+## 
+## Coefficients:
+##             Estimate Std. Error t value Pr(>|t|)
+## (Intercept)    1.302     17.632    0.07     0.94
+## RH            -0.122      0.204   -0.60     0.55
+## rain          -2.140      9.594   -0.22     0.82
+## temp           0.900      0.573    1.57     0.12
+## 
+## Residual standard error: 63.5 on 513 degrees of freedom
+## Multiple R-squared:  0.0105, Adjusted R-squared:  0.00468 
+## F-statistic: 1.81 on 3 and 513 DF,  p-value: 0.145
+
+## Analysis of Variance Table
+## 
+## Response: area
+##            Df  Sum Sq Mean Sq F value Pr(>F)  
+## FFMC        1    3366    3366    0.83  0.362  
+## DMC         1    8139    8139    2.01  0.157  
+## DC          1       8       8    0.00  0.965  
+## ISI         1    1184    1184    0.29  0.589  
+## temp        1   13549   13549    3.35  0.068 .
+## RH          1    3707    3707    0.92  0.339  
+## wind        1    3249    3249    0.80  0.371  
+## rain        1     279     279    0.07  0.793  
+## Residuals 508 2057384    4050                 
+## ---
+## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+anova(
+  object = lm_sefd
+)
+## Analysis of Variance Table
+## 
+## Response: area
+##            Df  Sum Sq Mean Sq F value Pr(>F)  
+## RH          1   11924   11924    2.96  0.086 .
+## rain        1       0       0    0.00  0.997  
+## temp        1    9950    9950    2.47  0.117  
+## Residuals 513 2068990    4033                 
+## ---
+## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+anova(
+  object = lm_sefd2
+)
+## Analysis of Variance Table
+## 
+## Response: area
+##            Df  Sum Sq Mean Sq F value Pr(>F)  
+## DMC         1   11140   11140    2.76  0.097 .
+## ISI         1     453     453    0.11  0.738  
+## temp        1   13396   13396    3.32  0.069 .
+## RH          1    4104    4104    1.02  0.314  
+## rain        1     118     118    0.03  0.864  
+## Residuals 511 2061653    4035                 
+## ---
+## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
